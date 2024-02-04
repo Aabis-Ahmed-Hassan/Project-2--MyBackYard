@@ -18,7 +18,7 @@ import 'package:my_project/screens/screen_8.dart';
 import 'package:my_project/screens/screen_9.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -38,29 +38,39 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                MoveToScreen(title: 'Screen 1', shiftToScreen: Screen_One()),
-                MoveToScreen(title: 'Screen 2', shiftToScreen: Screen_Two()),
-                MoveToScreen(title: 'Screen 3', shiftToScreen: Screen_Three()),
-                MoveToScreen(title: 'Screen 4', shiftToScreen: Screen_Four()),
-                MoveToScreen(title: 'Screen 5', shiftToScreen: Screen_Five()),
-                MoveToScreen(title: 'Screen 6', shiftToScreen: Screen_Six()),
-                MoveToScreen(title: 'Screen 8', shiftToScreen: Screen_Eight()),
-                MoveToScreen(title: 'Screen 9', shiftToScreen: Screen_Nine()),
-                MoveToScreen(title: 'Screen 10', shiftToScreen: Screen_Ten()),
                 MoveToScreen(
-                    title: 'Screen 11', shiftToScreen: Screen_Eleven()),
+                    title: 'Screen 1', shiftToScreen: const Screen_One()),
                 MoveToScreen(
-                    title: 'Screen 12', shiftToScreen: Screen_Twelve()),
+                    title: 'Screen 2', shiftToScreen: const Screen_Two()),
                 MoveToScreen(
-                    title: 'Screen 13', shiftToScreen: Screen_Thirteen()),
+                    title: 'Screen 3', shiftToScreen: const Screen_Three()),
                 MoveToScreen(
-                    title: 'Screen 17', shiftToScreen: Screen_Seventeen()),
+                    title: 'Screen 4', shiftToScreen: const Screen_Four()),
                 MoveToScreen(
-                    title: 'Screen 18', shiftToScreen: Screen_Eighteen()),
+                    title: 'Screen 5', shiftToScreen: const Screen_Five()),
                 MoveToScreen(
-                    title: 'Screen 19', shiftToScreen: Screen_Nineteen()),
+                    title: 'Screen 6', shiftToScreen: const Screen_Six()),
                 MoveToScreen(
-                    title: 'Screen 20', shiftToScreen: Screen_Twenty()),
+                    title: 'Screen 8', shiftToScreen: const Screen_Eight()),
+                MoveToScreen(
+                    title: 'Screen 9', shiftToScreen: const Screen_Nine()),
+                MoveToScreen(
+                    title: 'Screen 10', shiftToScreen: const Screen_Ten()),
+                MoveToScreen(
+                    title: 'Screen 11', shiftToScreen: const Screen_Eleven()),
+                MoveToScreen(
+                    title: 'Screen 12', shiftToScreen: const Screen_Twelve()),
+                MoveToScreen(
+                    title: 'Screen 13', shiftToScreen: const Screen_Thirteen()),
+                MoveToScreen(
+                    title: 'Screen 17',
+                    shiftToScreen: const Screen_Seventeen()),
+                MoveToScreen(
+                    title: 'Screen 18', shiftToScreen: const Screen_Eighteen()),
+                MoveToScreen(
+                    title: 'Screen 19', shiftToScreen: const Screen_Nineteen()),
+                MoveToScreen(
+                    title: 'Screen 20', shiftToScreen: const Screen_Twenty()),
               ],
             ),
           ),
@@ -88,7 +98,7 @@ class MoveToScreen extends StatelessWidget {
             context, MaterialPageRoute(builder: (context) => shiftToScreen));
       },
       child: Container(
-        margin: EdgeInsets.symmetric(vertical: 15),
+        margin: const EdgeInsets.symmetric(vertical: 15),
         width: 150,
         height: 50,
         decoration: BoxDecoration(
@@ -98,7 +108,7 @@ class MoveToScreen extends StatelessWidget {
         child: Center(
           child: Text(
             title.toString(),
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white,
               fontSize: 22,
             ),

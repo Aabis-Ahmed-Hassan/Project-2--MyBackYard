@@ -60,12 +60,12 @@ class Screen_Three extends StatelessWidget {
                     children: [
                       Image(
                         height: height * 0.025,
-                        image: AssetImage('assets/icons/timer.png'),
+                        image: const AssetImage('assets/icons/timer.png'),
                       ),
                       SizedBox(
                         width: width * 0.02,
                       ),
-                      Text('00:59',
+                      const Text('00:59',
                           style: TextStyle(
                             fontWeight: FontWeight.w400,
                             fontSize: 14,

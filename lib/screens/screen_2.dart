@@ -57,7 +57,7 @@ class Screen_Two extends StatelessWidget {
                   SizedBox(
                     height: height * 0.01,
                   ),
-                  Align(
+                  const Align(
                     alignment: Alignment.topRight,
                     child: Text(
                       'Forgot Password?',
