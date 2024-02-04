@@ -57,24 +57,20 @@ class Screen_Fourteen extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Expanded(
-                        child: MyDropdown(
-                          heading: 'Country',
-                          initialSelection: 'US',
-                          dropdownOneValue: 'US',
-                          dropdownOneLabel: 'US',
-                        ),
+                      MyDropdown(
+                        heading: 'Country',
+                        initialSelection: 'US',
+                        dropdownOneValue: 'US',
+                        dropdownOneLabel: 'US',
                       ),
                       SizedBox(
                         width: width * 0.035,
                       ),
-                      Expanded(
-                        child: MyDropdown(
-                          heading: 'City',
-                          initialSelection: 'NewYork',
-                          dropdownOneValue: 'NewYork',
-                          dropdownOneLabel: 'NewYork',
-                        ),
+                      MyDropdown(
+                        heading: 'Country',
+                        initialSelection: 'US',
+                        dropdownOneValue: 'US',
+                        dropdownOneLabel: 'US',
                       )
                     ],
                   ),
@@ -84,22 +80,20 @@ class Screen_Fourteen extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Expanded(
-                          child: MyDropdown(
+                      MyDropdown(
                         heading: 'State',
                         initialSelection: 'Wyoming',
                         dropdownOneValue: 'Wyoming',
                         dropdownOneLabel: 'Wyoming',
-                      )),
+                      ),
                       SizedBox(
                         width: width * 0.035,
                       ),
-                      Expanded(
-                          child: MyTextFormField(
+                      MyTextFormField(
                         heading: 'Zip Code',
                         hintText: '54000',
                         showPrefix: false,
-                      ))
+                      )
                     ],
                   ),
                   const Spacer(),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_project/constants/my_colors.dart';
+import 'package:my_project/screens/screen_0.dart';
 import 'package:my_project/screens/screen_1.dart';
 import 'package:my_project/screens/screen_10.dart';
 import 'package:my_project/screens/screen_11.dart';
@@ -49,11 +50,13 @@ class MyApp extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     MoveToScreen(
                         title: 'Test Screen',
                         shiftToScreen: const TestScreen()),
+                    MoveToScreen(
+                        title: 'Screen 0', shiftToScreen: Screen_Zero()),
                   ],
                 ),
                 Row(
