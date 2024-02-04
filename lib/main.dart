@@ -11,6 +11,9 @@ import 'package:my_project/screens/screen_19.dart';
 import 'package:my_project/screens/screen_2.dart';
 import 'package:my_project/screens/screen_20.dart';
 import 'package:my_project/screens/screen_21.dart';
+import 'package:my_project/screens/screen_22.dart';
+import 'package:my_project/screens/screen_23.dart';
+import 'package:my_project/screens/screen_24.dart';
 import 'package:my_project/screens/screen_3.dart';
 import 'package:my_project/screens/screen_4.dart';
 import 'package:my_project/screens/screen_5.dart';
@@ -135,8 +138,19 @@ class MyApp extends StatelessWidget {
                         title: 'Screen 21',
                         shiftToScreen: const Screen_Twenty_One()),
                     MoveToScreen(
-                        title: 'Screen 21',
-                        shiftToScreen: const Screen_Twenty_One()),
+                        title: 'Screen 22',
+                        shiftToScreen: const Screen_Twenty_Two()),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    MoveToScreen(
+                        title: 'Screen 23',
+                        shiftToScreen: const Screen_Twenty_Three()),
+                    MoveToScreen(
+                        title: 'Screen 24',
+                        shiftToScreen: const Screen_Twenty_Four()),
                   ],
                 ),
               ],
