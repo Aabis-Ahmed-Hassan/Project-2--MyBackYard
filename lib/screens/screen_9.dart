@@ -82,12 +82,12 @@ class Screen_Nine extends StatelessWidget {
                         height: height * 0.02,
                         width: height * 0.02,
                         decoration: BoxDecoration(
-                          color: Color(0xffBADA8B),
+                          color: const Color(0xffBADA8B),
                           borderRadius: BorderRadius.circular(
                             18,
                           ),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Icon(
                             Icons.done,
                             color: Color(0xff49A153),
@@ -98,7 +98,7 @@ class Screen_Nine extends StatelessWidget {
                       SizedBox(
                         width: width * 0.02,
                       ),
-                      Text(
+                      const Text(
                         'By sign up I agree with Terms and Conditions',
                         style: TextStyle(
                             fontWeight: FontWeight.w500,
@@ -117,12 +117,12 @@ class Screen_Nine extends StatelessWidget {
                         height: height * 0.02,
                         width: height * 0.02,
                         decoration: BoxDecoration(
-                          color: Color(0xffBADA8B),
+                          color: const Color(0xffBADA8B),
                           borderRadius: BorderRadius.circular(
                             18,
                           ),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Icon(
                             Icons.done,
                             color: Color(0xff49A153),
@@ -133,7 +133,7 @@ class Screen_Nine extends StatelessWidget {
                       SizedBox(
                         width: width * 0.02,
                       ),
-                      Text(
+                      const Text(
                         'By sign up I agree with Terms and Conditions',
                         style: TextStyle(
                             fontWeight: FontWeight.w500,

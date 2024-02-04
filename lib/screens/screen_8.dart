@@ -46,8 +46,8 @@ class Screen_Eight extends StatelessWidget {
                   SignInOptions(
                       title: 'Login with Email',
                       imagePath: 'assets/images/gmail.png'),
-                  Spacer(),
-                  Text(
+                  const Spacer(),
+                  const Text(
                     "Already have an account?",
                     style: TextStyle(
                       fontSize: 17,
@@ -110,7 +110,7 @@ class SignInOptions extends StatelessWidget {
           ),
           Text(
             title.toString(),
-            style: TextStyle(
+            style: const TextStyle(
               fontWeight: FontWeight.w500,
               fontFamily: 'Urbanist',
               fontSize: 16,

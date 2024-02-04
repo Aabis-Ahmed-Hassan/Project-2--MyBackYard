@@ -39,7 +39,7 @@ class Screen_Ten extends StatelessWidget {
                   ),
                   Expanded(
                     child: ListView(
-                      children: [
+                      children: const [
                         Text(
                           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
                           style: TextStyle(
@@ -87,14 +87,14 @@ class MyOTPBox extends StatelessWidget {
       width: width * 0.13,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(17),
-        color: Color(
+        color: const Color(
           0xff202857,
         ),
       ),
       child: Center(
         child: Text(
           title.toString(),
-          style: TextStyle(
+          style: const TextStyle(
             fontWeight: FontWeight.w400,
             fontFamily: 'Urbanist',
             fontSize: 16,

@@ -81,7 +81,7 @@ class _Screen_SixState extends State<Screen_Six> {
           ),
         ),
         showOverlay
-            ? Opacity(
+            ? const Opacity(
                 opacity: 0.2,
                 child: Scaffold(),
               )

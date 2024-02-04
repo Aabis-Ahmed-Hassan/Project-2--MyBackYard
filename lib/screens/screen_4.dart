@@ -30,7 +30,7 @@ class Screen_Four extends StatelessWidget {
                   ),
                   Image(
                       height: height * 0.2,
-                      image: AssetImage('assets/images/done.png')),
+                      image: const AssetImage('assets/images/done.png')),
                   const Spacer(),
                   const Text('Successfully\nVerified!',
                       style: AppTexts.HeadingStyle1,

@@ -66,14 +66,14 @@ class MyOTPBox extends StatelessWidget {
       width: width * 0.13,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(17),
-        color: Color(
+        color: const Color(
           0xff202857,
         ),
       ),
       child: Center(
         child: Text(
           title.toString(),
-          style: TextStyle(
+          style: const TextStyle(
             fontWeight: FontWeight.w400,
             fontFamily: 'Urbanist',
             fontSize: 16,
