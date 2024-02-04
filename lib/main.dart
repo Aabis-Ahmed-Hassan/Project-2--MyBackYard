@@ -5,6 +5,9 @@ import 'package:my_project/screens/screen_10.dart';
 import 'package:my_project/screens/screen_11.dart';
 import 'package:my_project/screens/screen_12.dart';
 import 'package:my_project/screens/screen_13.dart';
+import 'package:my_project/screens/screen_14.dart';
+import 'package:my_project/screens/screen_15.dart';
+import 'package:my_project/screens/screen_16.dart';
 import 'package:my_project/screens/screen_17.dart';
 import 'package:my_project/screens/screen_18.dart';
 import 'package:my_project/screens/screen_19.dart';
@@ -18,6 +21,7 @@ import 'package:my_project/screens/screen_3.dart';
 import 'package:my_project/screens/screen_4.dart';
 import 'package:my_project/screens/screen_5.dart';
 import 'package:my_project/screens/screen_6.dart';
+import 'package:my_project/screens/screen_7.dart';
 import 'package:my_project/screens/screen_8.dart';
 import 'package:my_project/screens/screen_9.dart';
 import 'package:my_project/screens/test_screen.dart';
@@ -83,30 +87,51 @@ class MyApp extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     MoveToScreen(
-                        title: 'Screen 8', shiftToScreen: const Screen_Eight()),
+                        title: 'Screen 7', shiftToScreen: Screen_Seven()),
                     MoveToScreen(
-                        title: 'Screen 9', shiftToScreen: const Screen_Nine()),
+                        title: 'Screen 8', shiftToScreen: const Screen_Eight()),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     MoveToScreen(
+                        title: 'Screen 9', shiftToScreen: const Screen_Nine()),
+                    MoveToScreen(
                         title: 'Screen 10', shiftToScreen: const Screen_Ten()),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
                     MoveToScreen(
                         title: 'Screen 11',
                         shiftToScreen: const Screen_Eleven()),
+                    MoveToScreen(
+                        title: 'Screen 12',
+                        shiftToScreen: const Screen_Twelve()),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     MoveToScreen(
-                        title: 'Screen 12',
-                        shiftToScreen: const Screen_Twelve()),
-                    MoveToScreen(
                         title: 'Screen 13',
                         shiftToScreen: const Screen_Thirteen()),
+                    MoveToScreen(
+                        title: 'Screen 14',
+                        shiftToScreen: const Screen_Fourteen()),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    MoveToScreen(
+                        title: 'Screen 15',
+                        shiftToScreen: const Screen_Fifteen()),
+                    MoveToScreen(
+                        title: 'Screen 16',
+                        shiftToScreen: const Screen_Sixteen()),
                   ],
                 ),
                 Row(

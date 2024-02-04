@@ -18,7 +18,9 @@ class Screen_Twenty extends StatelessWidget {
         const MyContainerForGradient(),
         Scaffold(
           backgroundColor: Colors.transparent,
-          appBar: MyAppBar(),
+          appBar: MyAppBar(
+            showBellIcon: true,
+          ),
           body: Center(
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: width * 0.1),

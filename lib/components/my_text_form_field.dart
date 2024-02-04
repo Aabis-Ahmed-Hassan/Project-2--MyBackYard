@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:my_project/constants/my_colors.dart';
 
 class MyTextFormField extends StatelessWidget {
   MyTextFormField({
     super.key,
     required this.heading,
     required this.hintText,
-    required this.prefixIcon,
+    this.prefixIcon,
     this.suffixIcon,
     this.showSuffix = false,
+    this.showPrefix = true,
   });
 
   var heading, hintText, prefixIcon, suffixIcon, showSuffix;
+  bool showPrefix; //for screen 14,16
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height * 1;
@@ -39,11 +42,13 @@ class MyTextFormField extends StatelessWidget {
         ),
         TextFormField(
           decoration: InputDecoration(
-            prefixIcon: Icon(
-              prefixIcon,
-              color: Color(0xff636889),
-              size: height * 0.023,
-            ),
+            prefixIcon: showPrefix
+                ? Icon(
+                    prefixIcon,
+                    color: Color(0xff636889),
+                    size: height * 0.023,
+                  )
+                : null,
             suffixIcon: showSuffix
                 ? Icon(
                     suffixIcon,
@@ -58,7 +63,7 @@ class MyTextFormField extends StatelessWidget {
               fontSize: 16,
               fontFamily: 'Urbanist',
               fontWeight: FontWeight.w400,
-              color: Color(0xffFFFFFF),
+              color: AppColors.textFormFieldTextColor,
             ),
             contentPadding: EdgeInsets.symmetric(
                 horizontal: width * 0.05, vertical: height * 0.01),

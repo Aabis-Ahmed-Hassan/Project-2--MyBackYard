@@ -4,4 +4,5 @@ class AppColors {
   static const defaultBlue = Color(0xff232C60);
 
   static const defaultGreen = Color(0xff459554);
+  static const textFormFieldTextColor = Color(0xffFFFFFF);
 }
