@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_project/components/my_app_bar.dart';
 import 'package:my_project/components/my_button.dart';
-import 'package:my_project/components/my_container_for_gradient.dart';
+import 'package:my_project/components/my_container_for_scaffold_background.dart';
 import 'package:my_project/constants/my_texts.dart';
 
 class Screen_Ten extends StatelessWidget {

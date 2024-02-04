@@ -8,13 +8,9 @@ class MyTextFormField extends StatelessWidget {
     required this.prefixIcon,
     this.suffixIcon,
     this.showSuffix = false,
-    this.myHorizontalPadding = 0.05,
-    this.myVerticalPadding = 0.01,
   });
 
   var heading, hintText, prefixIcon, suffixIcon, showSuffix;
-  var myHorizontalPadding,
-      myVerticalPadding; //for Screen_Twenty widget. Otherwise, we can remove this variable and use fixed value for padding (MediaQuery).
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height * 1;
@@ -65,13 +61,14 @@ class MyTextFormField extends StatelessWidget {
               color: Color(0xffFFFFFF),
             ),
             contentPadding: EdgeInsets.symmetric(
-                horizontal: width * myHorizontalPadding,
-                vertical: height * myVerticalPadding),
+                horizontal: width * 0.05, vertical: height * 0.01),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(19),
               borderSide: BorderSide.none,
             ),
+            alignLabelWithHint: true,
           ),
+          textAlign: TextAlign.start,
         )
       ],
     );

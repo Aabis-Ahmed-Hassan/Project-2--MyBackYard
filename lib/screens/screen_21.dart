@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/components/my_button.dart';
 import 'package:my_project/components/my_popup_menu_container.dart';
 
-class Screen_Seven extends StatelessWidget {
-  Screen_Seven({super.key});
+class Screen_Twenty_One extends StatelessWidget {
+  const Screen_Twenty_One({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,12 +12,9 @@ class Screen_Seven extends StatelessWidget {
         backgroundColor: Colors.transparent,
         body: MyPopUpMenuContainer(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
-                height: height * 0.015,
-              ),
               Image(
                 height: height * 0.125,
                 image: const AssetImage(
@@ -26,7 +22,7 @@ class Screen_Seven extends StatelessWidget {
                 ),
               ),
               const Text(
-                'Password Changed Successfully!',
+                'Your Request Sent!',
                 style: TextStyle(
                   fontSize: 21.5,
                   color: Colors.white,
@@ -34,19 +30,6 @@ class Screen_Seven extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                 ),
                 textAlign: TextAlign.center,
-              ),
-              SizedBox(
-                height: height * 0.04,
-              ),
-              MyButton(
-                title: 'Back to Login',
-                onTap: () {
-                  Navigator.pop(context);
-                },
-              ),
-              const Spacer(),
-              SizedBox(
-                height: height * 0.015,
               ),
             ],
           ),

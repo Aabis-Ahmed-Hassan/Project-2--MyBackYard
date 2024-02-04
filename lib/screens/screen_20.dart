@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_project/components/my_app_bar.dart';
 import 'package:my_project/components/my_button.dart';
-import 'package:my_project/components/my_container_for_gradient.dart';
+import 'package:my_project/components/my_container_for_scaffold_background.dart';
 import 'package:my_project/components/my_text_form_field.dart';
 import 'package:my_project/constants/my_texts.dart';
 
@@ -43,13 +43,85 @@ class Screen_Twenty extends StatelessWidget {
                   SizedBox(
                     height: height * 0.04,
                   ),
-                  MyTextFormField(
-                    heading: 'Message',
-                    hintText: 'Type a message...',
-                    prefixIcon: Icons.lock,
-                    suffixIcon: Icons.remove_red_eye_outlined,
-                    showSuffix: true,
-                    myVerticalPadding: 0.2,
+                  TextFormField(
+                    textAlignVertical: TextAlignVertical.top,
+                    decoration: InputDecoration(
+                      filled: true,
+                      fillColor: const Color(0xff202857),
+                      hintText: 'Type a message...',
+                      hintStyle: const TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'Urbanist',
+                        fontWeight: FontWeight.w400,
+                        color: Color(0xffFFFFFF),
+                      ),
+                      contentPadding: EdgeInsets.only(
+                          left: width * 0.05,
+                          right: width * 0.05,
+                          top: height * 0.03,
+                          bottom: height * 0.125),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(19),
+                        borderSide: BorderSide.none,
+                      ),
+                      alignLabelWithHint: true,
+                    ),
+                    textAlign: TextAlign.start,
+                  ),
+                  SizedBox(
+                    height: height * 0.05,
+                  ),
+                  Container(
+                    height: height * 0.06,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                        color: Colors.black.withOpacity(0.2),
+                        borderRadius: BorderRadius.circular(7),
+                        border: Border.all(
+                          color: Colors.white,
+                          width: 1,
+                        )),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.attach_file,
+                          size: 18,
+                          color: Color(0xffFFFFFF),
+                        ),
+                        SizedBox(
+                          width: width * 0.02,
+                        ),
+                        RichText(
+                          text: TextSpan(
+                            children: [
+                              TextSpan(
+                                text: 'Attach File ',
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontFamily: 'Urbanist',
+                                  fontWeight: FontWeight.w500,
+                                  color: Color(
+                                    0xffFFFFFF,
+                                  ),
+                                ),
+                              ),
+                              TextSpan(
+                                text: '(should not be more than 12mb)',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 12,
+                                  color: Colors.white.withOpacity(
+                                    0.8,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   const Spacer(),
                   MyButton(
