@@ -41,6 +41,12 @@ class MyTextFormField extends StatelessWidget {
           height: height * 0.01,
         ),
         TextFormField(
+          style: TextStyle(
+            fontSize: 16,
+            fontFamily: 'Urbanist',
+            fontWeight: FontWeight.w400,
+            color: AppColors.textFormFieldTextColor,
+          ),
           decoration: InputDecoration(
             prefixIcon: showPrefix
                 ? Icon(

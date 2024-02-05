@@ -25,36 +25,42 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Container(
-                      width: width * 0.125,
-                      height: height * 0.125,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff222952),
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      child: Center(
-                        child: Image(
-                            height: height * 0.0175,
-                            fit: BoxFit.fitWidth,
-                            image: const AssetImage(
-                                'assets/icons/back_arrow_for_appbar.png')),
+                    //using circle avatar because radius of container widget wasn't working
+
+                    child: CircleAvatar(
+                      radius: width * 0.07,
+                      backgroundColor: const Color(0xff222952),
+                      child: Container(
+                        // width: width * 0.125,
+                        // height: height * 0.125,
+                        child: Center(
+                          child: Image(
+                              height: height * 0.0175,
+                              fit: BoxFit.fitWidth,
+                              image: const AssetImage(
+                                  'assets/icons/back_arrow_for_appbar.png')),
+                        ),
                       ),
                     ),
                   ),
                   showBellIcon
-                      ? Container(
-                          width: width * 0.125,
-                          height: height * 0.125,
-                          decoration: BoxDecoration(
-                            color: const Color(0xff222952),
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                          child: Center(
-                            child: Image(
-                                height: height * 0.0175,
-                                fit: BoxFit.fitWidth,
-                                image: const AssetImage(
-                                    'assets/icons/bell_2.png')),
+                      //using circle avatar because radius of container widget wasn't working
+                      ? CircleAvatar(
+                          radius: width * 0.07,
+                          backgroundColor: const Color(0xff222952),
+                          child: Opacity(
+                            opacity: 0.3,
+                            child: Container(
+                              // width: width * 0.125,
+                              // height: height * 0.125,
+                              child: Center(
+                                child: Image(
+                                    height: height * 0.0175,
+                                    fit: BoxFit.fitWidth,
+                                    image: const AssetImage(
+                                        'assets/icons/bell_2.png')),
+                              ),
+                            ),
                           ),
                         )
                       : Container(),
