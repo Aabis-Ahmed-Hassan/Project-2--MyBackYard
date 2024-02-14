@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:my_project/constants/my_colors.dart';
 import 'package:my_project/renter_screens/renter_screen_3.dart';
+import 'package:my_project/renter_screens/renter_screen_4.dart';
+import 'package:my_project/renter_screens/renter_screen_5.dart';
+import 'package:my_project/renter_screens/renter_screen_7.dart';
 import 'package:my_project/user_screens/screen_0.dart';
 import 'package:my_project/user_screens/screen_1.dart';
 import 'package:my_project/user_screens/screen_10.dart';
@@ -58,7 +61,17 @@ class MyApp extends StatelessWidget {
                         title: 'Renter 3',
                         shiftToScreen: const Renter_Screen_3()),
                     MoveToScreen(
-                        title: 'Screen 0', shiftToScreen: Screen_Zero()),
+                        title: 'Renter 4', shiftToScreen: Renter_Screen_4()),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    MoveToScreen(
+                        title: 'Renter 5',
+                        shiftToScreen: const Renter_Screen_5()),
+                    MoveToScreen(
+                        title: 'Renter 7', shiftToScreen: Renter_Screen_7()),
                   ],
                 ),
                 //previous screens (as users)
