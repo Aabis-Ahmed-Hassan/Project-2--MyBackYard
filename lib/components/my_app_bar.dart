@@ -2,10 +2,16 @@ import 'package:flutter/material.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   MyAppBar(
-      {super.key, this.donotShowLeading = false, this.showBellIcon = false});
+      {super.key,
+      this.donotShowLeading = false,
+      this.showBellIcon = false,
+      this.showTitle = false,
+      this.appBarTitle});
 
   var donotShowLeading;
   var showBellIcon;
+  var showTitle;
+  var appBarTitle;
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 
   @override
@@ -43,6 +49,17 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                       ),
                     ),
                   ),
+                  showTitle
+                      ? Text(
+                          appBarTitle.toString(),
+                          style: TextStyle(
+                            fontFamily: 'Urbanist',
+                            fontWeight: FontWeight.w600,
+                            fontSize: 20.5,
+                            color: Colors.white,
+                          ),
+                        )
+                      : Container(),
                   showBellIcon
                       //using circle avatar because radius of container widget wasn't working
                       ? CircleAvatar(

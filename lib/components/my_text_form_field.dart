@@ -52,7 +52,7 @@ class MyTextFormField extends StatelessWidget {
                 ? Icon(
                     prefixIcon,
                     color: Color(0xff636889),
-                    size: height * 0.023,
+                    size: height * 0.0275,
                   )
                 : null,
             suffixIcon: showSuffix

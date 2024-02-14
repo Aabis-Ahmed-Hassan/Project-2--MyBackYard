@@ -1,31 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:my_project/constants/my_colors.dart';
-import 'package:my_project/screens/screen_0.dart';
-import 'package:my_project/screens/screen_1.dart';
-import 'package:my_project/screens/screen_10.dart';
-import 'package:my_project/screens/screen_11.dart';
-import 'package:my_project/screens/screen_12.dart';
-import 'package:my_project/screens/screen_13.dart';
-import 'package:my_project/screens/screen_14.dart';
-import 'package:my_project/screens/screen_15.dart';
-import 'package:my_project/screens/screen_16.dart';
-import 'package:my_project/screens/screen_17.dart';
-import 'package:my_project/screens/screen_18.dart';
-import 'package:my_project/screens/screen_19.dart';
-import 'package:my_project/screens/screen_2.dart';
-import 'package:my_project/screens/screen_20.dart';
-import 'package:my_project/screens/screen_21.dart';
-import 'package:my_project/screens/screen_22.dart';
-import 'package:my_project/screens/screen_23.dart';
-import 'package:my_project/screens/screen_24.dart';
-import 'package:my_project/screens/screen_3.dart';
-import 'package:my_project/screens/screen_4.dart';
-import 'package:my_project/screens/screen_5.dart';
-import 'package:my_project/screens/screen_6.dart';
-import 'package:my_project/screens/screen_7.dart';
-import 'package:my_project/screens/screen_8.dart';
-import 'package:my_project/screens/screen_9.dart';
-import 'package:my_project/screens/test_screen.dart';
+import 'package:my_project/renter_screens/renter_screen_3.dart';
+import 'package:my_project/user_screens/screen_0.dart';
+import 'package:my_project/user_screens/screen_1.dart';
+import 'package:my_project/user_screens/screen_10.dart';
+import 'package:my_project/user_screens/screen_11.dart';
+import 'package:my_project/user_screens/screen_12.dart';
+import 'package:my_project/user_screens/screen_13.dart';
+import 'package:my_project/user_screens/screen_14.dart';
+import 'package:my_project/user_screens/screen_15.dart';
+import 'package:my_project/user_screens/screen_16.dart';
+import 'package:my_project/user_screens/screen_17.dart';
+import 'package:my_project/user_screens/screen_18.dart';
+import 'package:my_project/user_screens/screen_19.dart';
+import 'package:my_project/user_screens/screen_2.dart';
+import 'package:my_project/user_screens/screen_20.dart';
+import 'package:my_project/user_screens/screen_21.dart';
+import 'package:my_project/user_screens/screen_22.dart';
+import 'package:my_project/user_screens/screen_23.dart';
+import 'package:my_project/user_screens/screen_24.dart';
+import 'package:my_project/user_screens/screen_3.dart';
+import 'package:my_project/user_screens/screen_4.dart';
+import 'package:my_project/user_screens/screen_5.dart';
+import 'package:my_project/user_screens/screen_6.dart';
+import 'package:my_project/user_screens/screen_7.dart';
+import 'package:my_project/user_screens/screen_8.dart';
+import 'package:my_project/user_screens/screen_9.dart';
+import 'package:my_project/user_screens/test_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,6 +50,19 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                // new screens (as renter)
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    MoveToScreen(
+                        title: 'Renter 3',
+                        shiftToScreen: const Renter_Screen_3()),
+                    MoveToScreen(
+                        title: 'Screen 0', shiftToScreen: Screen_Zero()),
+                  ],
+                ),
+                //previous screens (as users)
+
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

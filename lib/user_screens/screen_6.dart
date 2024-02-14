@@ -4,7 +4,7 @@ import 'package:my_project/components/my_button.dart';
 import 'package:my_project/components/my_container_for_scaffold_background.dart';
 import 'package:my_project/components/my_text_form_field.dart';
 import 'package:my_project/constants/my_texts.dart';
-import 'package:my_project/screens/screen_7.dart';
+import 'package:my_project/user_screens/screen_7.dart';
 
 class Screen_Six extends StatefulWidget {
   const Screen_Six({super.key});
