@@ -5,7 +5,6 @@ import 'package:my_project/renter_screens/renter_screen_4.dart';
 import 'package:my_project/renter_screens/renter_screen_5.dart';
 import 'package:my_project/renter_screens/renter_screen_7.dart';
 import 'package:my_project/renter_screens/renter_screen_8.dart';
-import 'package:my_project/renter_screens/renter_screen_9.dart';
 import 'package:my_project/user_screens/screen_0.dart';
 import 'package:my_project/user_screens/screen_1.dart';
 import 'package:my_project/user_screens/screen_10.dart';
@@ -63,7 +62,8 @@ class MyApp extends StatelessWidget {
                         title: 'Renter 3',
                         shiftToScreen: const Renter_Screen_3()),
                     MoveToScreen(
-                        title: 'Renter 4', shiftToScreen: Renter_Screen_4()),
+                        title: 'Renter 4',
+                        shiftToScreen: const Renter_Screen_4()),
                   ],
                 ),
                 Row(
@@ -82,8 +82,6 @@ class MyApp extends StatelessWidget {
                     MoveToScreen(
                         title: 'Renter 8',
                         shiftToScreen: const Renter_Screen_8()),
-                    MoveToScreen(
-                        title: 'Renter 9', shiftToScreen: Renter_Screen_9()),
                   ],
                 ),
                 //previous screens (as users)
